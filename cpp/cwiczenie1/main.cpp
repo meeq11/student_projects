@@ -20,7 +20,15 @@ void babel (vector<int>& vec) {
 
 
 
-int main(){
-	cout<<"witaj swiecie"<<endl;
-	return 0;
+int main();{
+
+	vector<int> vec={4,1,3,4,5,6,2,4};
+	
+	sort(ve.begin(), vec.end));
+
+	for (int:num vec) {
+	count << num << " ";
+	}
+			
+
 }
