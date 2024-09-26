@@ -38,6 +38,7 @@ TEST(BenchmarkTest, QuickSortBenchmark) {
     std::srand(std::time(0)); // Inicjalizacja generatora liczb losowych
     std::generate(vec.begin(), vec.end(), std::rand);
 
+
     // Początek pomiaru czasu
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -48,6 +49,21 @@ TEST(BenchmarkTest, QuickSortBenchmark) {
     std::chrono::duration<double> elapsed_seconds = end - start;
 
     std::cout << "Czas sortowania: " << elapsed_seconds.count() << "s\n";
+}
+
+TEST(BenchmarkTest, BubbleSortBenchmark) {
+	std::vector<int> vec(10000);
+	std::srand(time(0));
+	std::generate(vec.begin(), vec.end(), rand);
+
+	auto start = std::chrono::high_resolution_clock::now();
+
+	bubbleSort(vec);
+
+	auto end = std::chrono::high_resolution_clock::now();
+	std::chrono::duration<double> elapsed_seconds = end - start;
+
+	std::cout << "Czas sortowania babelkowego: " << elapsed_seconds.count() << "s\n";
 }
 
 int main(int argc, char **argv) {
