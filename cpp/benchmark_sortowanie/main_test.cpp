@@ -22,6 +22,16 @@ void quickSort(std::vector<int>& vec) {
     vec.insert(vec.end(), right.begin(), right.end());
 }
 
+void bubbleSort(std::vector<int>& vec) {
+	for (size_t i =0; i < vec.size(); i++) {
+		for (size_t j =0; j < vec.size() - 1 - i; j++) {
+			if (vec[j] > vec[j + 1]) {
+				std::swap(vec[j], vec[j + 1]);
+			}
+		}
+	}
+}
+
 // Test wydajności sortowania QuickSort
 TEST(BenchmarkTest, QuickSortBenchmark) {
     std::vector<int> vec(10000); // Tworzymy wektor z 10000 losowymi liczbami
