@@ -1,7 +1,7 @@
 # Benchmark sortowanie
 
 Jako zadanie na lekcji mieliśmy zrobić benchmarksortowanie, jest to bardzo prosty algorytm do zaimplemntowania 
-a naszym celem na koniec było wykonanie test aplikacji na koniec.
+a naszym celem na koniec było porównania sortowań.
 
 ## Część kodu
 ```cpp
