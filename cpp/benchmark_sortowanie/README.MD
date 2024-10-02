@@ -86,7 +86,7 @@ sh kompiluj_test.sh
 
 ## Wynik sortowania
 
-![przykladowa grafika](Screenshot1.png)
+![przykladowa grafika](Screenshot_1.png)
 
 ## Kontrybucja
 
