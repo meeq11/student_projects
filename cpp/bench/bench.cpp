@@ -9,8 +9,11 @@ int cIf(int value) {
         return 2;
     } else if (value == 3) {
         return 3;
-    }
+    } else if (value == 4) {
+	return 4;
+    } else {
     return 0;
+}
 }
 
 int cSwitch(int value) {
@@ -21,13 +24,15 @@ int cSwitch(int value) {
         return 2;
         case 3:
         return 3;
+	case 4:
+	return 4;
         default:
         return 0;
     }
 }
 
 TEST(BenchmarkTest, IfBenchmark) {
-    const int iterations = 10000;
+    const int iterations = 100000;
     int sIf = 0;
 
     auto startIf = std::chrono::high_resolution_clock::now();
@@ -41,7 +46,7 @@ TEST(BenchmarkTest, IfBenchmark) {
 }
 
 TEST(BenchmarkTest, SwitchBenchmark) {
-    const int iterations = 10000;
+    const int iterations = 100000;
     int sSwitch = 0;
 
     auto startSwitch = std::chrono::high_resolution_clock::now();
