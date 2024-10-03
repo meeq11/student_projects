@@ -94,8 +94,7 @@ Wszelkie propozycje ulepszeń mile widziane. Prosimy o przestrzeganie naszych wy
 
 ## Zrzuty ekranu i wyniki
 
-![will be updated]
-
+![przykladowa grafika](Screenshot_1.png)
 
 ## Autorzy
 
