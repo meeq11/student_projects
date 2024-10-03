@@ -94,7 +94,10 @@ Wszelkie propozycje ulepszeń mile widziane. Prosimy o przestrzeganie naszych wy
 
 ## Zrzuty ekranu i wyniki
 
-![przykladowa grafika](Screenshot_1.png)
+![przykladowa grafika](bench.png)
+
+Czas if: 270mikrosekund
+Czas switch: 350 mikrosekund
 
 ## Autorzy
 
