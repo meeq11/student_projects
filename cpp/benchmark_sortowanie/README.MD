@@ -12,7 +12,6 @@ a naszym celem na koniec było porównania sortowań.
 #include "gtest/gtest.h"
 #include <chrono>
 
-// Funkcja sortująca wektor za pomocą QuickSort
 void quickSort(std::vector<int>& vec) {
     if (vec.size() <= 1) return;
     int pivot = vec[vec.size() / 2];
@@ -39,19 +38,15 @@ void bubbleSort(std::vector<int>& vec) {
 	}
 }
 
-// Test wydajności sortowania QuickSort
 TEST(BenchmarkTest, QuickSortBenchmark) {
-    std::vector<int> vec(10000); // Tworzymy wektor z 10000 losowymi liczbami
-    std::srand(std::time(0)); // Inicjalizacja generatora liczb losowych
+    std::vector<int> vec(10000);
+    std::srand(std::time(0));
     std::generate(vec.begin(), vec.end(), std::rand);
 
-
-    // Początek pomiaru czasu
     auto start = std::chrono::high_resolution_clock::now();
 
-    quickSort(vec); // Sortujemy wektor
+    quickSort(vec); 
 
-    // Koniec pomiaru czasu
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed_seconds = end - start;
 
