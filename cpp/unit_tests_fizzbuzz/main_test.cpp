@@ -3,17 +3,25 @@
 #include "functions.cpp"
 
 
-TEST(mojagrupatestow, mojtest) {
-   #TODO: tu napisz test
+TEST(FizzBuzzTests, MultipleOf3) {
+   EXPECT_EQ(fizzBuzz(3), "Buzz");
+   EXPECT_EQ(fizzBuzz(9), "Buzz");
+   EXPECT_EQ(fizzBuzz(21), "Buzz");
 }
 
-TEST(mojagrupatestow, mojtest) {
-   #TODO: tu napisz test
+TEST(FizzBuzzTests, MultipleOf5) {
+   EXPECT_EQ(fizzBuzz(5), "Fizz");
+   EXPECT_EQ(fizzBuzz(10), "Fizz");
+   EXPECT_EQ(fizzBuzz(20), "Fizz");
 }
 
-TEST(mojagrupatestow, mojtest) {
-   #TODO: tu napisz test
+TEST(FizzBuzzTests, MultipleOf3And5) {
+   EXPECT_EQ(fizzBuzz(15), "FizzBuzz");
+   EXPECT_EQ(fizzBuzz(30), "FizzBuzz");
+   EXPECT_EQ(fizzBuzz(45), "FizzBuzz");
 }
+
+TEST(FizzBuzzTests,
 
 
 // ... inne testy ...

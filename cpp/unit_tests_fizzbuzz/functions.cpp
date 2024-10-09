@@ -13,8 +13,5 @@ string fizzBuzz(int num) {
 		}
 	}
 
-	
 
 
-
-#TODO: tu umieść swoją funkcję
