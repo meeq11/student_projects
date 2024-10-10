@@ -3,15 +3,15 @@
 
 
 TEST(FizzBuzzTests, MultipleOf3) {
-   EXPECT_EQ(fizzBuzz(3), "Buzz");
-   EXPECT_EQ(fizzBuzz(9), "Buzz");
-   EXPECT_EQ(fizzBuzz(21), "Buzz");
+   EXPECT_EQ(fizzBuzz(3), "Fizz");
+   EXPECT_EQ(fizzBuzz(9), "Fizz");
+   EXPECT_EQ(fizzBuzz(21), "Fizz");
 }
 
 TEST(FizzBuzzTests, MultipleOf5) {
-   EXPECT_EQ(fizzBuzz(5), "Fizz");
-   EXPECT_EQ(fizzBuzz(10), "Fizz");
-   EXPECT_EQ(fizzBuzz(20), "Fizz");
+   EXPECT_EQ(fizzBuzz(5), "Buzz");
+   EXPECT_EQ(fizzBuzz(10), "Buzz");
+   EXPECT_EQ(fizzBuzz(20), "Buzz");
 }
 
 TEST(FizzBuzzTests, MultipleOf3And5) {
