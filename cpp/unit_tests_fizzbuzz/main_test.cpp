@@ -1,4 +1,3 @@
-// main_test.cpp
 #include <gtest/gtest.h>
 #include "functions.cpp"
 
