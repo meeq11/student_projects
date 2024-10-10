@@ -8,7 +8,7 @@ string fizzBuzz(int num) {
 			return "FizzBuzz";
 		} else if (num % 3 == 0 ) {
 			return "Fizz";
-		} else if (num & 5 == 0 ) {
+		} else if (num % 5 == 0 ) {
 			return "Buzz";
 		} else {
 			return to_string(num);
