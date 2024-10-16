@@ -17,15 +17,6 @@ Dodatkowo, projekt wykorzystuje framework Google Test (`gtest`) do automatyzacji
 | `main_test.cpp`     | Testy jednostkowe weryfikujące poprawność działania programu |
 
 
-## Testy
-| Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
-|--------------------|--------------------|---------------------|---------------------|
-| MultipleOf3 | Testuje przypadki, gdy liczba jest wielokrotnością 3 | 3, 9, 21 | "Fizz" |
-| MultipleOf5 | Testuje przypadki, gdy liczba jest wielokrotnością 5 | 5, 10, 20 | "Buzz" |
-| MultipleOf3And5 | Testuje przypadki, gdy liczba jest wielokrotnością 3 i 5 | 15, 30, 45 | "FizzBuzz" |
-| NonMultipleOf3And5 | Testuje przypadki, gdy liczba nie jest wielokrotnością 3 i 5 | 4, 7, 16 | "4", "7", "16" |
-
-
 ## Kod Testowania
 ```cpp 
 #include <gtest/gtest.h>
@@ -62,6 +53,15 @@ int main(int argc, char **argv) {
 }
 
 ```
+
+
+## Testy
+| Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
+|--------------------|--------------------|---------------------|---------------------|
+| MultipleOf3 | Testuje przypadki, gdy liczba jest wielokrotnością 3 | 3, 9, 21 | "Fizz" |
+| MultipleOf5 | Testuje przypadki, gdy liczba jest wielokrotnością 5 | 5, 10, 20 | "Buzz" |
+| MultipleOf3And5 | Testuje przypadki, gdy liczba jest wielokrotnością 3 i 5 | 15, 30, 45 | "FizzBuzz" |
+| NonMultipleOf3And5 | Testuje przypadki, gdy liczba nie jest wielokrotnością 3 i 5 | 4, 7, 16 | "4", "7", "16" |
 
 
 
