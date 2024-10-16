@@ -8,7 +8,7 @@ FizzBuzz jest używany jako prosty test logiczny w programowaniu.
 
 Dodatkowo, projekt wykorzystuje framework Google Test (`gtest`) do automatyzacji testów jednostkowych, co pozwala na sprawdzenie poprawności różnych przypadków użycia funkcji.
 
-## Tabela plików
+## Tabela najważniejszych plików
 
 | Plik          | Opis                                                      |
 |---------------|------------------------------------------------------------|
