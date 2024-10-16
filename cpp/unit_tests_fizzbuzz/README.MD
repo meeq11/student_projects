@@ -14,7 +14,7 @@ Dodatkowo, projekt wykorzystuje framework Google Test (`gtest`) do automatyzacji
 |---------------|------------------------------------------------------------|
 | `functions.cpp` | Implementacja logiki FizzBuzz                             |
 | `main.cpp`     | Program uruchamiający funkcję z wejściem użytkownika       |
-| `test.cpp`     | Testy jednostkowe weryfikujące poprawność działania programu |
+| `main_test.cpp`     | Testy jednostkowe weryfikujące poprawność działania programu |
 
 
 ## Testy
