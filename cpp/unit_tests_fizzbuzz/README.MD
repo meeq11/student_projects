@@ -10,8 +10,8 @@ Program implementuje klasyczną funkcję **FizzBuzz**, która działa zgodnie z 
 
 Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które sprawdzają poprawność działania funkcji `fizzBuzz`.
 
-## Kompilacja
-| Nagłówek kolumny 1 | Nagłówek kolumny 2 | Nagłówek kolumny 3 |
+## Testy
+| Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
 |--------------------|--------------------|---------------------|
-| Wiersz 1, Kolumna 1| Wiersz 1, Kolumna 2 | Wiersz 1, Kolumna 3 |
+| MultipleOf3 | Testuje przypadki, gdy liczba jest wielokrotnością 3 | 3, 9, 21 | "Fizz" |
 | Wiersz 2, Kolumna 1 | Wiersz 2, Kolumna 2 | Wiersz 2, Kolumna 3 |
