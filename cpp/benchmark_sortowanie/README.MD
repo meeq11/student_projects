@@ -42,7 +42,25 @@ W kodzie znajdują się dwa testy, `QuickSortBenchmark` oraz `BubbleSortBenchmar
 - Mierzy czas zakończenia sortowania (`end`).
 - Wyświetla czas wykonania algorytmu w sekundach.
 
-## Funkcja główna
+## Czas wykonania algorytmów
 
-```cpp
-int main(int argc, char **argv)
+| Algorytm          | Przypadek testowy       | Czas wykonania (s)      |
+|--------------------|-------------------------|--------------------------|
+| **Quick Sort**     | Losowy wektor 10 000    | Zazwyczaj < 1 sekundy    |
+| **Bubble Sort**    | Losowy wektor 10 000    | Zazwyczaj > 10 sekund    |
+
+## Analiza wyników
+
+1. **Quick Sort**:
+   - **Efektywność**: Szybkie sortowanie jest znacznie bardziej efektywne niż sortowanie bąbelkowe, szczególnie dla dużych zbiorów danych. Algorytm działa w średnim czasie O(n log n), co czyni go jednym z najszybszych algorytmów sortowania.
+   - **Rekurencyjność**: Szybkie sortowanie używa podejścia dziel i rządź, co sprawia, że jest w stanie efektywnie dzielić problem na mniejsze podproblemy.
+
+2. **Bubble Sort**:
+   - **Wydajność**: Sortowanie bąbelkowe ma średnią złożoność czasową O(n²), co sprawia, że staje się niepraktyczne dla dużych zbiorów danych. Czas wykonania znacznie wzrasta w miarę zwiększania się rozmiaru wektora.
+   - **Prostota**: Mimo że sortowanie bąbelkowe jest łatwe do zrozumienia i zaimplementowania, nie jest zalecane do użytku w aplikacjach wymagających efektywności.
+
+## Wnioski
+
+- **Szybkie sortowanie** jest zdecydowanie lepszym wyborem dla sortowania dużych zbiorów danych, ze względu na swoją efektywność i szybszy czas wykonania.
+- **Sortowanie bąbelkowe** może być użyteczne w celach edukacyjnych lub do sortowania małych zbiorów danych, ale w praktycznych zastosowaniach powinno być unikane ze względu na swoją niską wydajność.
+
