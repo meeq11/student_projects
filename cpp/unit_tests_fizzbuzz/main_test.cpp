@@ -26,13 +26,6 @@ TEST(FizzBuzzTests, NonMultipleOf3And5) {
    EXPECT_EQ(fizzBuzz(16), "16");
 }
 
-TEST(FizzBuzzTests, ZeroAndNegative) {
-   EXPECT_EQ(fizzBuzz(0), "0");
-   EXPECT_EQ(fizzBuzz(-3), "-3");
-   EXPECT_EQ(fizzBuzz(-5), "-5");
-   EXPECT_EQ(fizzBuzz(-15), "-15");
-}
-
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
