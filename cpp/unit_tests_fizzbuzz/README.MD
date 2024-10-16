@@ -14,4 +14,6 @@ Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które spra
 | Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
 |--------------------|--------------------|---------------------|---------------------|
 | MultipleOf3 | Testuje przypadki, gdy liczba jest wielokrotnością 3 | 3, 9, 21 | "Fizz" |
-| Wiersz 2, Kolumna 1 | Wiersz 2, Kolumna 2 | Wiersz 2, Kolumna 3 |
+| MultipleOf5 | Testuje przypadki, gdy liczba jest wielokrotnością 5 | 5, 10, 20 | "Buzz" |
+| MultipleOf3And5 | Testuje przypadki, gdy liczba jest wielokrotnością 3 i 5 | 15, 30, 45 | "FizzBuzz" |
+| NonMultipleOf3And5 | Testuje przypadki, gdy liczba nie jest wielokrotnością 3 i 5 | 4, 7, 16 | "4", "7", "16" |
