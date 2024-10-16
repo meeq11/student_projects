@@ -85,6 +85,8 @@ sh kompiluj_test.sh
 
 ![przykladowa grafika](Screenshot_1.png)
 
+Możemy wnioskować, że QuickSort jest szybszy niż BubbleSort
+
 ## Kontrybucja
 
 Wszelkie propozycje ulepszeń mile widziane. Prosimy o przestrzeganie naszych wytycznych przy kontrybucji.
