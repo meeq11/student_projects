@@ -21,4 +21,5 @@ Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które spra
 ## Zrzuty ekranu i wyniki
 
 ![przykladowa grafika](testy.png)
+
 Wszystkie testy przeszły pomyślnie
