@@ -44,10 +44,10 @@ W kodzie znajdują się dwa testy, `QuickSortBenchmark` oraz `BubbleSortBenchmar
 
 ## Czas wykonania algorytmów
 
-| Algorytm          | Przypadek testowy       | Czas wykonania (s)      |
+| Algorytm          | Przypadek testowy       | Czas wykonania (ms)      |
 |--------------------|-------------------------|--------------------------|
-| **Quick Sort**     | Losowy wektor 10 000    | Zazwyczaj < 1 sekundy    |
-| **Bubble Sort**    | Losowy wektor 10 000    | Zazwyczaj > 10 sekund    |
+| **Quick Sort**     | Losowy wektor 10 000    | 13    |
+| **Bubble Sort**    | Losowy wektor 10 000    | 672    |
 
 ## Analiza wyników
 
