@@ -2,13 +2,20 @@
 
 ## Opis
 
-Program implementuje klasyczną funkcję **FizzBuzz**, która działa zgodnie z poniższymi zasadami:
-- Jeśli liczba jest podzielna przez 3, zwraca "Fizz".
-- Jeśli liczba jest podzielna przez 5, zwraca "Buzz".
-- Jeśli liczba jest podzielna przez 3 i 5, zwraca "FizzBuzz".
-- W przeciwnym wypadku zwraca samą liczbę jako ciąg znaków.
+Projekt zawiera implementację klasycznego programu FizzBuzz oraz testy jednostkowe, które weryfikują poprawność jego działania. 
+Program analizuje podaną liczbę i zwraca odpowiedni wynik w zależności od spełnionych warunków. 
+FizzBuzz jest używany jako prosty test logiczny w programowaniu.
 
-Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które sprawdzają poprawność działania funkcji `fizzBuzz`.
+Dodatkowo, projekt wykorzystuje framework Google Test (`gtest`) do automatyzacji testów jednostkowych, co pozwala na sprawdzenie poprawności różnych przypadków użycia funkcji.
+
+## Tabela plików
+
+| Plik          | Opis                                                      |
+|---------------|------------------------------------------------------------|
+| `functions.cpp` | Implementacja logiki FizzBuzz                             |
+| `main.cpp`     | Program uruchamiający funkcję z wejściem użytkownika       |
+| `test.cpp`     | Testy jednostkowe weryfikujące poprawność działania programu |
+
 
 ## Testy
 | Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
@@ -17,6 +24,8 @@ Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które spra
 | MultipleOf5 | Testuje przypadki, gdy liczba jest wielokrotnością 5 | 5, 10, 20 | "Buzz" |
 | MultipleOf3And5 | Testuje przypadki, gdy liczba jest wielokrotnością 3 i 5 | 15, 30, 45 | "FizzBuzz" |
 | NonMultipleOf3And5 | Testuje przypadki, gdy liczba nie jest wielokrotnością 3 i 5 | 4, 7, 16 | "4", "7", "16" |
+
+
 ## Kod Testowania
 ```cpp 
 #include <gtest/gtest.h>
@@ -61,3 +70,7 @@ int main(int argc, char **argv) {
 ![przykladowa grafika](testy.png)
 
 Wszystkie testy przeszły pomyślnie
+
+## Autorzy
+
+- [Maksym Petrushkevych](https://github.com/meeq11)
