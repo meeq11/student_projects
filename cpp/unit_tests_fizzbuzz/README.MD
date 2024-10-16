@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
 
 ![przykladowa grafika](testy.png)
 
-Wszystkie testy przeszły pomyślnie
+Wszystkie testy przeszły pomyślnie, program działa prawidłowo!!!
 
 ## Autorzy
 
