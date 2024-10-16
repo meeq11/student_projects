@@ -12,6 +12,6 @@ Dodatkowo, program zawiera testy jednostkowe napisane w Google Test, które spra
 
 ## Testy
 | Nazwa testu | Opis | Przykładowe dane wejściowe | Oczekiwany wynik |
-|--------------------|--------------------|---------------------|
+|--------------------|--------------------|---------------------|---------------------|
 | MultipleOf3 | Testuje przypadki, gdy liczba jest wielokrotnością 3 | 3, 9, 21 | "Fizz" |
 | Wiersz 2, Kolumna 1 | Wiersz 2, Kolumna 2 | Wiersz 2, Kolumna 3 |
