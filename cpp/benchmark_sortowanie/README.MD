@@ -1,7 +1,6 @@
 # Benchmark sortowanie
 
-Jako zadanie na lekcji mieliśmy zrobić benchmarksortowanie, jest to bardzo prosty algorytm do zaimplemntowania 
-a naszym celem na koniec było porównania sortowań. Kod zawiera dwie funkcje implementujące algorytmy sortowania: quickSort oraz bubbleSort. 
+Jako zadanie na lekcji mieliśmy zrobić benchmark sortowanie, a naszym celem na koniec było porównania sortowań. Kod zawiera dwie funkcje implementujące algorytmy sortowania: quickSort oraz bubbleSort. 
 Każdy algorytm jest testowany pod względem wydajności za pomocą testów jednostkowych, z użyciem frameworka Google Test (gtest). 
 W celu pomiaru czasu sortowania wykorzystano bibliotekę chrono.
 
