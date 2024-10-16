@@ -1,95 +1,48 @@
-# Benchmark sortowanie
+# Dokumentacja kodu
 
-Jako zadanie na lekcji mieliśmy zrobić benchmark sortowanie, a naszym celem na koniec było porównania sortowań. Kod zawiera dwie funkcje implementujące algorytmy sortowania: quickSort oraz bubbleSort. 
-Każdy algorytm jest testowany pod względem wydajności za pomocą testów jednostkowych, z użyciem frameworka Google Test (gtest). 
-W celu pomiaru czasu sortowania wykorzystano bibliotekę chrono.
+Kod ten implementuje dwa algorytmy sortowania: **szybkie sortowanie (quick sort)** oraz **sortowanie bąbelkowe (bubble sort)**. Przy użyciu frameworka Google Test dokonano testów porównawczych, które mierzą czas wykonania każdego z algorytmów na dużym zbiorze danych (10 000 losowych elementów).
 
-## Część kodu
+## Funkcje sortujące
+
+### Funkcja `quickSort`
+
+| Nazwa funkcji     | Opis                                                                                                              |
+|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| `void quickSort(std::vector<int>& vec)` | Funkcja rekurencyjnie implementująca algorytm szybkiego sortowania. Jeśli wektor `vec` zawiera więcej niż jeden element, wybiera element pivotu (środkowy element wektora), po czym dzieli pozostałe elementy na dwa wektory: `left` (elementy mniejsze niż pivot) i `right` (elementy większe niż pivot). Następnie rekurencyjnie sortuje oba podzbiory i łączy je w jeden posortowany wektor. |
+
+**Parametry**:
+- `vec`: Referencja do wektora `std::vector<int>`, który zostanie posortowany.
+
+### Funkcja `bubbleSort`
+
+| Nazwa funkcji     | Opis                                                                                                              |
+|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| `void bubbleSort(std::vector<int>& vec)` | Implementuje algorytm sortowania bąbelkowego, który wielokrotnie iteruje przez wektor, zamieniając miejscami sąsiadujące elementy, jeśli są one w niewłaściwej kolejności. Proces ten jest powtarzany aż do posortowania całego wektora. |
+
+**Parametry**:
+- `vec`: Referencja do wektora `std::vector<int>`, który zostanie posortowany.
+
+## Testy porównawcze
+
+W kodzie znajdują się dwa testy, `QuickSortBenchmark` oraz `BubbleSortBenchmark`, które mierzą czas wykonania odpowiednio funkcji `quickSort` i `bubbleSort`.
+
+### Test `QuickSortBenchmark`
+
+- Tworzy wektor `vec` zawierający 10 000 losowych liczb.
+- Mierzy czas rozpoczęcia sortowania (`start`) przy użyciu `std::chrono::high_resolution_clock::now()`.
+- Wywołuje funkcję `quickSort` na wektorze `vec`.
+- Mierzy czas zakończenia sortowania (`end`).
+- Wyświetla czas wykonania algorytmu w sekundach.
+
+### Test `BubbleSortBenchmark`
+
+- Tworzy wektor `vec` zawierający 10 000 losowych liczb.
+- Mierzy czas rozpoczęcia sortowania (`start`).
+- Wywołuje funkcję `bubbleSort` na wektorze `vec`.
+- Mierzy czas zakończenia sortowania (`end`).
+- Wyświetla czas wykonania algorytmu w sekundach.
+
+## Funkcja główna
+
 ```cpp
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <ctime>
-#include "gtest/gtest.h"
-#include <chrono>
-
-void quickSort(std::vector<int>& vec) {
-    if (vec.size() <= 1) return;
-    int pivot = vec[vec.size() / 2];
-    std::vector<int> left, right;
-    for (size_t i = 0; i < vec.size(); i++) {
-        if (vec[i] < pivot) left.push_back(vec[i]);
-        else if (vec[i] > pivot) right.push_back(vec[i]);
-    }
-    quickSort(left);
-    quickSort(right);
-    vec.clear();
-    vec.insert(vec.end(), left.begin(), left.end());
-    vec.push_back(pivot);
-    vec.insert(vec.end(), right.begin(), right.end());
-}
-
-void bubbleSort(std::vector<int>& vec) {
-	for (size_t i =0; i < vec.size(); i++) {
-		for (size_t j =0; j < vec.size() - 1 - i; j++) {
-			if (vec[j] > vec[j + 1]) {
-				std::swap(vec[j], vec[j + 1]);
-			}
-		}
-	}
-}
-
-TEST(BenchmarkTest, QuickSortBenchmark) {
-    std::vector<int> vec(10000);
-    std::srand(std::time(0));
-    std::generate(vec.begin(), vec.end(), std::rand);
-
-    auto start = std::chrono::high_resolution_clock::now();
-
-    quickSort(vec); 
-
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> elapsed_seconds = end - start;
-
-    std::cout << "Czas sortowania: " << elapsed_seconds.count() << "s\n";
-}
-
-TEST(BenchmarkTest, BubbleSortBenchmark) {
-	std::vector<int> vec(10000);
-	std::srand(time(0));
-	std::generate(vec.begin(), vec.end(), rand);
-
-	auto start = std::chrono::high_resolution_clock::now();
-
-	bubbleSort(vec);
-
-	auto end = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<double> elapsed_seconds = end - start;
-
-	std::cout << "Czas sortowania babelkowego: " << elapsed_seconds.count() << "s\n";
-}
-
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
-```
-
-## Użycie
-
-Instrukcje jak uruchomić aplikację: 
-sh kompiluj_test.sh
-
-## Wynik sortowania
-
-![przykladowa grafika](Screenshot_1.png)
-
-Możemy wnioskować, że QuickSort jest szybszy niż BubbleSort
-
-## Kontrybucja
-
-Wszelkie propozycje ulepszeń mile widziane. Prosimy o przestrzeganie naszych wytycznych przy kontrybucji.
-
-## Autorzy
-
-- [Maksym Petrushkevych](https://github.com/meeq11)
+int main(int argc, char **argv)
