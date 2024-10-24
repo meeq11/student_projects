@@ -1,17 +1,21 @@
-# FizzBuzz Program
+# Fizz Buzz
 
 ## Opis
 
-Kalkulator schodów to narzędzie, które ułatwia projektowanie schodów, obliczanie ich parametrów oraz dostosowywanie wymiarów do przestrzeni dostępnej w budynku. Aplikacja pozwala na szybkie obliczenia potrzebnych wymiarów schodów takich jak: ilość stopni, wysokość stopni, długość biegu, czy kąt nachylenia schodów, co umożliwia optymalizację projektu pod kątem ergonomii oraz zgodności z przepisami budowlanymi.
+Projekt zawiera implementację klasycznego programu FizzBuzz oraz testy jednostkowe, które weryfikują poprawność jego działania. 
+Program analizuje podaną liczbę i zwraca odpowiedni wynik w zależności od spełnionych warunków. 
+FizzBuzz jest używany jako prosty test logiczny w programowaniu.
 
-## Funkcjonalności:
-Obliczanie podstawowych parametrów schodów:
+Dodatkowo, projekt wykorzystuje framework Google Test (`gtest`) do automatyzacji testów jednostkowych, co pozwala na sprawdzenie poprawności różnych przypadków użycia funkcji.
 
-Liczba stopni: Na podstawie podanych wymiarów (wysokości kondygnacji i zalecanej wysokości stopnia), kalkulator oblicza liczbę stopni potrzebnych do pokonania danej wysokości.
+## Tabela najważniejszych plików
 
-Wysokość stopni: Program pozwala dostosować wysokość stopni zgodnie z zaleceniami ergonomicznymi, które zwykle wynoszą od 17 do 19 cm.
+| Plik          | Opis                                                      |
+|---------------|------------------------------------------------------------|
+| `functions.cpp` | Implementacja logiki FizzBuzz                             |
+| `main.cpp`     | Program uruchamiający funkcję z wejściem użytkownika       |
+| `main_test.cpp`     | Testy jednostkowe weryfikujące poprawność działania programu |
 
-Długość biegu schodów: Na podstawie liczby stopni i ich głębokości obliczana jest całkowita długość schodów.
 
 ## Kod Testowania
 ```cpp 
