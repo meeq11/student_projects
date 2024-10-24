@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
 
 ## Zrzuty ekranu i wyniki
 
-![przykladowa grafika](testy.png)
+![przykladowa grafika](schody.jpeg)
 
 Wszystkie testy przeszły pomyślnie, program działa prawidłowo!!!
 
