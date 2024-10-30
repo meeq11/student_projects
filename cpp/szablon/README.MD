@@ -21,7 +21,18 @@ Długość biegu schodów: Na podstawie liczby stopni i ich głębokości oblicz
 
 ![](zaz.png)
 
-Wszystkie testy przeszły pomyślnie, program działa prawidłowo!!!
+## Użycie programu
+
+### Wejście
+Program wymaga od użytkownika dwóch wartości:
+1. **Wysokość kondygnacji** (w cm) - wysokość pionowa schodów, którą muszą pokonać stopnie
+2. **Długość biegu schodów** (w cm) - długość pozioma, jaką zajmują schody.
+
+### Wyjście
+Po wprowadzeniu danych, program wyświetla:
+- Liczbę stopni
+- Wysokość Każdego stopnia (w cm)
+- Głębokość każdego stopnia (w cm)
 
 ## Autorzy
 
