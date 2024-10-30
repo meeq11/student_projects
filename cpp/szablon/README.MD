@@ -11,7 +11,7 @@ Liczba stopni: Na podstawie podanych wymiarów (wysokości kondygnacji i długo�
 
 Wysokość stopni: Program pozwala dostosować wysokość stopni zgodnie z zaleceniami ergonomicznymi, które zwykle wynoszą od 17 do 19 cm.
 
-Długość biegu schodów: Na podstawie liczby stopni i ich głębokości obliczana jest całkowita długość schodów.
+Głębokość stopnia: Program oblicza głębokość stopnia
 
 ## Przykładowy wygląd
 
