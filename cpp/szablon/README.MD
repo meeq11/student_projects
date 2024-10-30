@@ -17,6 +17,10 @@ Długość biegu schodów: Na podstawie liczby stopni i ich głębokości oblicz
 
 ![przykladowa grafika](schody.jpeg)
 
+## Założenie
+
+![](zaz.png)
+
 Wszystkie testy przeszły pomyślnie, program działa prawidłowo!!!
 
 ## Autorzy
