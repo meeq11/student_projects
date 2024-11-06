@@ -27,13 +27,10 @@ int main() {
     std::cout << "Podaj dlugosc biegu schodow (w cm): ";
     std::cin >> dlugoscBieguSchodow;
 
-    // Obliczanie liczby stopni
     int liczbaStopni = obliczLiczbeStopni(wysokoscKondygnacji);
 
-    // Obliczanie wysokości stopnia
     double wysokoscStopnia = obliczWysokoscStopnia(wysokoscKondygnacji, liczbaStopni);
 
-    // Obliczanie głębokości stopnia
     double glebokoscStopnia = obliczGlebokoscStopnia(dlugoscBieguSchodow, liczbaStopni);
 
     std::cout << "\nWyniki obliczen:\n";
