@@ -25,7 +25,7 @@ Obliczanie podstawowych parametrów schodów:
 
 ```cpp
 #include <iostream>
-#include <cmath> // Do użycia funkcji std::floor i std::round
+#include <cmath>
 
 // Funkcja do obliczenia liczby stopni
 int obliczLiczbeStopni(double wysokoscKondygnacji, double minWysokoscStopnia = 17.0, double maxWysokoscStopnia = 19.0) {
