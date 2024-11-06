@@ -90,6 +90,13 @@ Po wprowadzeniu danych, program wyświetla:
 - Głębokość stopnia (cm) - 28.7
 - Wysokość stopnia (cm) - 17.9
 
+**Mój program**
+- Ilość stopni - 14
+- Głębokość stopnia (cm) - 28.6
+- Wysokość stopnia (cm) - 17.9
+
+Wyniki różnią się tylko **1 milimetrem** w głębokości schodów, program działa poprawnie.
+
 ## Autorzy
 
 - [Maksym Petrushkevych](https://github.com/meeq11)
