@@ -7,11 +7,11 @@ Kalkulator schodów to narzędzie, które ułatwia projektowanie schodów, oblic
 ## Funkcjonalności:
 Obliczanie podstawowych parametrów schodów:
 
-Liczba stopni: Na podstawie podanych wymiarów (wysokości kondygnacji i długości biegu schodów, kalkulator oblicza liczbę stopni potrzebnych do pokonania danej wysokości.
+**Liczba stopni:** Na podstawie podanych wymiarów (wysokości kondygnacji i długości biegu schodów, kalkulator oblicza liczbę stopni potrzebnych do pokonania danej wysokości.
 
-Wysokość stopni: Program pozwala dostosować wysokość stopni zgodnie z zaleceniami ergonomicznymi, które zwykle wynoszą od 17 do 19 cm.
+**Wysokość stopni:** Program pozwala dostosować wysokość stopni zgodnie z zaleceniami ergonomicznymi, które zwykle wynoszą od 17 do 19 cm.
 
-Głębokość stopnia: Program oblicza głębokość stopnia
+**Głębokość stopnia:** Program oblicza głębokość stopnia
 
 ## Przykładowy wygląd
 
