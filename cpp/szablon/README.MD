@@ -85,8 +85,7 @@ Po wprowadzeniu danych, program wyświetla:
 
 ### Wyniki
 
-**Wynik** 
-calcoolator.pl ( kalkulator schodów )
+**calcoolator.pl** ( kalkulator schodów )
 - Ilość stopni - 14
 - Głębokość stopnia (cm) - 28.7
 - Wysokość stopnia (cm) - 17.9
