@@ -2,7 +2,7 @@
 
 ## Opis
 
-Kalkulator schodów to narzędzie, które ułatwia projektowanie schodów, obliczanie ich parametrów oraz dostosowywanie wymiarów do przestrzeni dostępnej w budynku. Aplikacja pozwala na szybkie obliczenia potrzebnych wymiarów schodów takich jak: ilość stopni, wysokość stopni, długość biegu, co umożliwia optymalizację projektu pod kątem ergonomii oraz zgodności z przepisami budowlanymi.
+Kalkulator schodów to narzędzie, które ułatwia projektowanie schodów, obliczanie ich parametrów oraz dostosowywanie wymiarów do przestrzeni dostępnej w budynku. Aplikacja pozwala na szybkie obliczenia potrzebnych wymiarów schodów takich jak: ilość stopni, wysokość stopni, długość biegu, głębokość stopnia, co umożliwia optymalizację projektu pod kątem ergonomii oraz zgodności z przepisami budowlanymi.
 
 ## Funkcjonalności:
 Obliczanie podstawowych parametrów schodów:
