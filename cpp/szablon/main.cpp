@@ -4,7 +4,7 @@
 // Funkcja do obliczenia liczby stopni
 int obliczLiczbeStopni(double wysokoscKondygnacji, double minWysokoscStopnia = 17.0, double maxWysokoscStopnia = 19.0) {
     // Liczymy wstępnie liczbę stopni dla maksymalnej i minimalnej wysokości stopnia
-    int liczbaStopni = std::round(wysokoscKondygnacji / ((minWysokoscStopnia + maxWysokoscStopnia) / 2.0));
+    int liczbaStopni = std::round(wysokoscKondygnacji / ((minWysokoscStopnia + maxWysokoscStopnia) / 2.0)) + 1;
     return liczbaStopni;
 }
 
@@ -15,7 +15,7 @@ double obliczWysokoscStopnia(double wysokoscKondygnacji, int liczbaStopni) {
 
 // Funkcja do obliczenia głębokości stopni
 double obliczGlebokoscStopnia(double dlugoscBieguSchodow, int liczbaStopni) {
-    return dlugoscBieguSchodow / liczbaStopni;
+    return dlugoscBieguSchodow / (liczbaStopni - 1);
 }
 
 int main() {
