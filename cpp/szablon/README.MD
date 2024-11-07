@@ -82,7 +82,7 @@ Po wprowadzeniu danych, program wyświetla:
 - Wysokość Każdego stopnia (w cm)
 - Głębokość każdego stopnia (w cm)
 
-### Wyniki
+### Wyniki ( 250x400 (cm))
 
 **calcoolator.pl** ( kalkulator schodów )
 - Ilość stopni - 14
