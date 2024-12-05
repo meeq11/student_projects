@@ -1,0 +1,98 @@
+namespace Schody
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void OnCalculateClicked(object sender, EventArgs e)
+        {
+            // Pobierz dane wejściowe
+            if (double.TryParse(WysokoscKondygnacjiEntry.Text, out double wysokoscKondygnacji) &&
+                double.TryParse(DlugoscBieguEntry.Text, out double dlugoscBieguSchodow))
+            {
+                // Obliczenia
+                int liczbaStopni = ObliczLiczbeStopni(wysokoscKondygnacji);
+                double wysokoscStopnia = ObliczWysokoscStopnia(wysokoscKondygnacji, liczbaStopni);
+                double glebokoscStopnia = ObliczGlebokoscStopnia(dlugoscBieguSchodow, liczbaStopni);
+
+                // Wyświetl wyniki
+                WynikiLabel.Text = $"Liczba stopni: {liczbaStopni}\n" +
+                                   $"Wysokość stopnia: {wysokoscStopnia:F2} cm\n" +
+                                   $"Głębokość stopnia: {glebokoscStopnia:F2} cm";
+            }
+            else
+            {
+                WynikiLabel.Text = "Błędne dane wejściowe. Wprowadź liczby.";
+            }
+        }
+
+        // Funkcja do obliczenia liczby stopni
+        private int ObliczLiczbeStopni(double wysokoscKondygnacji, double minWysokoscStopnia = 17.0, double maxWysokoscStopnia = 19.0)
+        {
+            return (int)Math.Round(wysokoscKondygnacji / ((minWysokoscStopnia + maxWysokoscStopnia) / 2.0)) + 1;
+        }
+
+        // Funkcja do obliczenia wysokości stopni
+        private double ObliczWysokoscStopnia(double wysokoscKondygnacji, int liczbaStopni)
+        {
+            return wysokoscKondygnacji / liczbaStopni;
+        }
+
+        // Funkcja do obliczenia głębokości stopni
+        private double ObliczGlebokoscStopnia(double dlugoscBieguSchodow, int liczbaStopni)
+        {
+            return dlugoscBieguSchodow / (liczbaStopni - 1);
+        }
+    }
+};
+
+
+
+
+
+
+
+
+---------
+
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Schody.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Tytuł -->
+            <Label Text="Kalkulator Schodów"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <!-- Pole do wprowadzania wysokości kondygnacji -->
+            <Entry x:Name="WysokoscKondygnacjiEntry"
+                   Placeholder="Wysokość kondygnacji (w cm)"
+                   Keyboard="Numeric" />
+
+            <!-- Pole do wprowadzania długości biegu schodów -->
+            <Entry x:Name="DlugoscBieguEntry"
+                   Placeholder="Długość biegu schodów (w cm)"
+                   Keyboard="Numeric" />
+
+            <!-- Przycisk obliczania -->
+            <Button Text="Oblicz" Clicked="OnCalculateClicked" />
+
+            <!-- Wyniki -->
+            <Label x:Name="WynikiLabel"
+                   Text=""
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
